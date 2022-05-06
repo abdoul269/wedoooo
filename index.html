@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/WEDOLOGO.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+
+                <ul>
+
+
+                    <li>
+                        <a href="index.html">ACCUEIL</a>
+                    </li>
+                    <li>
+                        <a href="scpmc.html ">GALERY</a>
+                    </li>
+                    <li>
+                        <a href="profil.html">SOCIÉTÉ</a>
+                    </li>
+                    <li>
+                        <a href="about.html ">A PROPOS</a>
+                    </li>
+
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+
+        </nav>
+
+        <div class="text-box ">
+            <h1>WELCOME TO WEDOHOUS</h1>
+            <p>la solution online personnalisée pour trouver le professionnel de travaux de construction<br> le mieux adapté aux spécificités de vos projets, au sein d'un panel de plusieurs membres<br> tous désireux de faire connaître au plus grand nombre
+                leurs métiers</p>
+            <a href="comment .html " class="hero-btn ">Comment Ca Marche</a>
+
+        </div>
+        <div class="go">
+            <a href="#main"> <i class="fa fa-angle-double-down"></i></a>
+        </div>
+
+
+
+    </section>
+
+    <div id="main">
+
+
+    </div>
+
+
+    <div id="footer">
+
+
+        <div class="titere">
+            <h4>WEDOHOUS</h4>
+
+            <ul>
+                <li>
+                    <a href="index.html ">ACCUEIL</a>
+                </li>
+                <li>
+                    <a href="scpmc.html ">GALERY</a>
+                </li>
+                <li>
+                    <a href="profil.html ">SOCIÉTÉ</a>
+                </li>
+                <li>
+                    <a href="about.html ">A PROPOS</a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="titere">
+            <h4>SERVICES</h4>
+            <ul>
+                <li>
+                    <a href="index.html ">CONTRUCTION</a>
+                </li>
+                <li>
+                    <a href="scpmc.html ">ARCHITECTURE</a>
+                </li>
+                <li>
+                    <a href="profil.html ">PLACO</a>
+                </li>
+                <li>
+                    <a href="about.html ">PEINTURE</a>
+                </li>
+            </ul>
+        </div>
+        <div class="titere">
+            <h4>CONTACT</h4>
+            <ul>
+                <li>
+                    <a href="index.html ">CONTRUCTION</a>
+                </li>
+                <li>
+                    <a href="scpmc.html ">ARCHITECTURE</a>
+                </li>
+                <li>
+                    <a href="profil.html ">PLACO</a>
+                </li>
+                <li>
+                    <a href="about.html ">PEINTURE</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div id="footer-botom">
+
+        <div class="gap">
+            <div class="footer ">
+                &copy; wedohous.com Tout droit reservé | Designed by Abdoul
+            </div>
+        </div>
+        <div class="gap">
+            <div class="icons">
+                <a href="tel:+2693408077 "><i class="fa fa-phone-square "></i></a>
+                <a href="https://www.facebook.com/kabdoul3 "><i class="fa fa-facebook-official "></i></a>
+                <a href="https://wa.me/message/3N3YNUYL6BIUE1 "><i class="fa fa-whatsapp "></i></a>
+                <a href="https://www.instagram.com/karmstone "><i class="fa fa-instagram "></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+
+
+    <script>
+        var navLins = document.getElementById("navLinks")
+
+        function showMenu() {
+            navLins.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLins.style.right = "-200px";
+        }
+        window.addEventListener('mouseup', function(event) {
+            var navLinks = document.getElementById('navLinks');
+            if (event.target != navLinks && event.target.node != navLinks) {
+                navLins.style.right = "-200px";
+            }
+        });
+    </script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

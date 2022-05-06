@@ -1,0 +1,313 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        list-style: none;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .header {
+        min-height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(images/Web\ 1920\ –\ 1.png);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+    
+    nav .fa {
+        display: none;
+    }
+    
+    .go {
+        text-align: center;
+        margin-top: 500px;
+    }
+    
+    .go a i {
+        color: rgb(243, 235, 235);
+        font-size: 60px;
+    }
+    
+    @keyframes go {
+        0% {
+            opacity: 0%;
+        }
+        100% {
+            opacity: 100%;
+        }
+    }
+    
+    .go {
+        animation: go 1s alternate infinite;
+        animation-delay: 1s;
+    }
+    
+    nav {
+        position: relative;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 38px;
+        background-color: transparent;
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav-links {
+        flex: 1;
+        text-align: right;
+    }
+    
+    .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+    
+    .nav-links ul li a {
+        color: rgb(247, 246, 241);
+        text-decoration: none;
+        font-size: 15px;
+    }
+    
+    .nav-links ul li::after {
+        content: "";
+        width: 0%;
+        height: 2px;
+        background: rgb(5, 206, 49);
+        display: block;
+        margin: auto;
+        transition: 1s;
+    }
+    
+    .nav-links ul li:hover::after {
+        width: 100%;
+    }
+    
+    .text-box {
+        width: 90%;
+        color: rgb(243, 235, 235);
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    
+    .text-box h1 {
+        font-size: 4rem;
+    }
+    
+    .text-box p {
+        margin: 10px 0 40px;
+        font-size: 20px;
+        color: rgba(236, 232, 197, 0.993);
+        font-weight: lighter;
+        text-transform: capitalize;
+    }
+    
+    .hero-btn {
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(241, 239, 238);
+        border: 1px solid #fff;
+        padding: 12px 30px;
+        font-size: 15px;
+        text-transform: capitalize;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+        font-weight: lighter;
+    }
+    
+    @keyframes hero {
+        0% {
+            background: rgba(13, 191, 197, 0.507);
+        }
+        100% {
+            transform: scale(1.1);
+            background: rgba(50, 197, 13, 0.507);
+        }
+    }
+    
+    .hero-btn {
+        animation: hero 2s infinite alternate;
+    }
+    
+    #main {
+        background: rgb(121, 30, 182);
+        height: 100vh;
+    }
+    
+    #footer {
+        display: flex;
+        width: 100%;
+        height: auto;
+        background: rgb(7, 3, 3);
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .titere {
+        padding: 15px;
+        width: 25%;
+        margin: auto;
+    }
+    
+    h4 {
+        font-size: 25px;
+        padding: 5px 0;
+        color: rgb(240, 229, 229);
+    }
+    
+    li a {
+        color: rgb(133, 126, 116);
+        padding: 5px;
+        transition: 1s;
+    }
+    
+    li a:hover {
+        color: rgb(219, 23, 23);
+    }
+    
+    .back-to-top {
+        position: fixed;
+        visibility: hidden;
+        padding: 20px;
+        opacity: 0;
+        right: 15px;
+        bottom: 30px;
+        z-index: 996;
+        background: #817672;
+        padding: 20px;
+        border-radius: 4px;
+        transition: all 0.4s;
+    }
+    
+    .back-to-top i {
+        font-size: 28px;
+        color: #fff;
+        line-height: 0;
+    }
+    
+    .back-to-top:hover {
+        background: #817571;
+        color: #fff;
+    }
+    
+    .back-to-top.active {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    #footer-botom {
+        width: 100%;
+        height: 90px;
+        background: rgb(0, 0, 0);
+        padding: 10px;
+        text-align: center;
+        flex-wrap: wrap;
+    }
+    
+    .gap {
+        padding: 5px;
+    }
+    
+    .footer {
+        color: blanchedalmond;
+    }
+    
+    .icons a {
+        color: rgb(177, 127, 19);
+        padding: 10px;
+        font-size: 20px;
+        ;
+    }
+    
+    @media(max-width: 997px) {
+        .text-box h1 {
+            font-size: 1.2rem;
+        }
+    }
+    
+    @media(max-width: 700px) {
+        .text-box h1 {
+            font-size: 1.3rem;
+        }
+        .nav-links ul li {
+            display: block;
+            padding-top: 60px;
+            font-weight: bold;
+        }
+        .nav-links {
+            position: fixed;
+            background: rgb(26, 1, 26);
+            height: 100vh;
+            width: 150px;
+            top: 0;
+            right: -2000px;
+            text-align: center;
+            z-index: 2000;
+            transition: 1s;
+        }
+        .nav-links ul li::after {
+            content: "";
+            width: 0%;
+            height: 2px;
+            background: crimson;
+            display: block;
+            margin: auto;
+            transition: 1s;
+        }
+        .nav-links ul li:hover::after {
+            width: 40%;
+        }
+        nav .fa {
+            display: block;
+            color: rgb(243, 240, 236);
+            font-size: 30px;
+        }
+        @keyframes go {
+            0% {
+                opacity: 0%;
+            }
+            100% {
+                opacity: 100%;
+            }
+        }
+        .go {
+            animation: go 1s infinite alternate;
+            animation-delay: 2s;
+        }
+        @keyframes go {
+            0% {
+                opacity: 0%;
+            }
+            100% {
+                opacity: 100%;
+            }
+        }
+        .go {
+            animation: go 1s infinite alternate;
+            animation-delay: 2s;
+        }
+        .titere {
+            width: 250%;
+        }
+        .back {
+            width: 20%;
+            background-color: crimson;
+            padding: 10px;
+            font-size: 25px;
+            font-weight: bolder;
+            text-align: center;
+            justify-content: center;
+            margin-left: 75%;
+        }
+    }
